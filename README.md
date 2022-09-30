@@ -1,5 +1,5 @@
 # cds-infrastructure
-CDS Project Infrastructure
+CDS Project Infrastructure - Where Projects Are Born, Hopefully
 
 # Requirements
 * Docker version 20.10.0 or later
@@ -28,7 +28,7 @@ CDS Project Infrastructure
   * What this does is it adds the external repo you want to build off of (like something that a researcher made) as a submodule of your fork of cds-infrastructure!
   * Since it's under your fork, you are now free to do whatever you want to the repo while being able to access the nice things CDS' development infrastructure has to offer (like a nice Docker container to run your programs in so you don't end up trying to get environments to work for a month TT)
 * Now that it's attached to your repo, commit the changes you've made in your project's main repo and push them to Github.
-* Please check out the Git Submodule Notes section for some important information about working with nested repos. **Make sure you read it thoroughly so you avoid a lot of panicked 3AM Slack messages down the line!**
+* Please check out the [Git Submodule Notes section](#submodules-for-dummies-or-how-to-work-with-submodules-and-avoid-panicking-at-3am) for some important information about working with nested repos. **Make sure you read it thoroughly so you avoid a lot of panicked 3AM Slack messages down the line!**
 
 # But I'm Building My Own Repo...
 * Great! That's wonderful! 
