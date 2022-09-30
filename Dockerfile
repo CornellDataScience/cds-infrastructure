@@ -1,2 +1,3 @@
 FROM alpine:3.14
-RUN apk add --no-cache python3
+RUN apt-get update && apt-get install \
+    python3.5 
