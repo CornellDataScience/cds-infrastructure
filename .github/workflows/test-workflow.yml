@@ -1,7 +1,7 @@
 defaults:
   run:
     shell: bash
-    working-directory: ./scripts
+    working-directory: /scripts/sample-script
 on:
   workflow_call:
   push:
