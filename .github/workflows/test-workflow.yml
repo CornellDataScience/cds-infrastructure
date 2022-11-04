@@ -11,8 +11,7 @@ on:
 jobs:
   test-job:
     runs-on: self-hosted
-    with: 
-      path: ./scripts/sample-script
     steps: 
       - name: run test script
+        uses: ./scripts/sample-script
         run: testScript.sh
