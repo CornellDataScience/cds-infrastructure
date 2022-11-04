@@ -15,5 +15,6 @@ jobs:
       - name: run test script
         #uses: ./scripts/sample-script
         run: |
+          ls
           cd ./scripts/sample-script
           testScript.sh
