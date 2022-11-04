@@ -1,0 +1,13 @@
+on:
+  workflow_call:
+  push:
+    branches:
+    - main
+    - feature_*
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: run test script
+        run: ./scripts/sample-script/testScript.sh
+        shell: bash
