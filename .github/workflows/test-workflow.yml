@@ -10,3 +10,5 @@ jobs:
     steps: 
       - name: run test script
         run: ls > test_wf.txt
+      - name: view file
+        run: cat test_wf.txt
