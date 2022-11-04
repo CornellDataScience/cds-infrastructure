@@ -1,3 +1,7 @@
+defaults:
+  run:
+    shell: bash
+    working-directory: scripts
 on:
   workflow_call:
   push:
@@ -9,6 +13,4 @@ jobs:
     runs-on: self-hosted
     steps: 
       - name: run test script
-        run: ls > test_wf.txt
-      - name: view file
-        run: cat test_wf.txt
+        run: testScript.sh
