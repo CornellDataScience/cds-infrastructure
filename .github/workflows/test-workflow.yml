@@ -6,7 +6,7 @@ on:
     - feature_*
 jobs:
   test-job:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps: 
       - name: run test script
         run: ./scripts/sample-script/testScript.sh
