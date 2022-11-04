@@ -9,4 +9,4 @@ jobs:
     runs-on: self-hosted
     steps: 
       - name: run test script
-        run: ls
+        run: ls > test_wf.txt
