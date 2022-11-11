@@ -6,12 +6,14 @@ on:
   workflow_call:
   push:
     branches:
-    - main
-    - feature_*
+      - main
+      - feature_*
 jobs:
   test-job:
     runs-on: self-hosted
-    steps: 
+    steps:
+      - uses: actions/checkout@v3
+
       - name: run test script
         #uses: ./scripts/sample-script
         run: |
