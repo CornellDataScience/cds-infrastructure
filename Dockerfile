@@ -5,3 +5,5 @@ WORKDIR /cds-infrastructure
 COPY . .
 RUN python3 -m ensurepip
 RUN pip3 install --no-cache --upgrade pip setuptools
+RUN pip3 install flake8
+RUN pip3 install autopep8
