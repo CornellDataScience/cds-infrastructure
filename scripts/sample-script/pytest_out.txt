@@ -10,3 +10,21 @@ rootdir: /Users/emily/Desktop/CDS Work/cds-infrastructure/scripts/sample-script
 collected 0 items
 
 ============================ no tests ran in 0.00s =============================
+============================= test session starts ==============================
+platform darwin -- Python 3.8.12, pytest-7.2.0, pluggy-1.0.0
+rootdir: /Users/emily/Desktop/CDS Work/cds-infrastructure
+collected 1 item
+
+../../test/test_add.py F                                                 [100%]
+
+=================================== FAILURES ===================================
+___________________________________ test_add ___________________________________
+
+    def test_add():
+>       assert NUMBER_1 + NUMBER_2 == 4.0
+E       assert (3.0 + 2.0) == 4.0
+
+../../test/test_add.py:8: AssertionError
+=========================== short test summary info ============================
+FAILED ../../test/test_add.py::test_add - assert (3.0 + 2.0) == 4.0
+============================== 1 failed in 0.02s ===============================
