@@ -19,6 +19,7 @@ def searchDir(dirname):
         else:
             if identifyTest(dirname+"/"+pathname):
                 # print("current valid test"+entirepath)
+                pathname = dirname+"/"+pathname
                 test_files = test_files +[pathname]
     return test_files
 
