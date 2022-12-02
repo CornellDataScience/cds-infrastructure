@@ -1,3 +1,9 @@
+## Users need to fill out these config variables
+config:
+  test_directory: /Users/jaymiee/Desktop/json/
+
+
+## do not touch anything after this
 defaults:
   run:
     shell: bash
@@ -6,15 +12,18 @@ on:
   workflow_call:
   push:
     branches:
-    - main
-    - feature_*
+      - main
+      - feature_*
 jobs:
   test-job:
     runs-on: self-hosted
-    steps: 
+    steps:
+      - uses: actions/checkout@v3
+
       - name: run test script
         #uses: ./scripts/sample-script
         run: |
           echo $(ls)
           cd ./scripts/sample-script
-          testScript.sh
+          bash testScript.sh 
+        # bash run-tests.sh [pass in the test_directory argument]
