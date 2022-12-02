@@ -1,10 +1,11 @@
 import re
 import os
 import io
+from datetime import datetime
 
 def writeTests(dirname):
     testfiles = searchDir(dirname)
-    file = open("pytests.txt","w")
+    file = open("pytests.txt"+str(datetime.now()),"w")
     for i in testfiles:
         file.write(i +"\n")
 
