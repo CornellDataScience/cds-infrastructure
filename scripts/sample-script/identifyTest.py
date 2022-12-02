@@ -1,11 +1,12 @@
 import re
 import os
 import io
-from datetime import datetime
+import yaml
+
 
 def writeTests(dirname):
     testfiles = searchDir(dirname)
-    file = open("pytests.txt"+str(datetime.now()),"w")
+    file = open("pytests.txt","w")
     for i in testfiles:
         file.write(i +"\n")
 
@@ -35,8 +36,10 @@ def file_to_string(filename):
     return data
 
 def main():
-    prompted = input("Enter name of directory to search: ")
-    prompted = "../../" + prompted
+    #prompted = input("Enter name of directory to search: ")
+  with open('../../config.yml') as info:
+    meta = yaml.load(info)
+    prompted = "../../" + meta["REPOSITORY_NAME"]
     print(writeTests(prompted))
 
 if __name__ == "__main__":

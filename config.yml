@@ -1,0 +1,3 @@
+### SET CONFIG VARIABLES at the start of project
+REPOSITORY_NAME : "test"
+# Replace with name of your src/ or highest level of your project in the root directory

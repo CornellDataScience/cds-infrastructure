@@ -7,3 +7,5 @@ RUN python3 -m ensurepip
 RUN pip3 install --no-cache --upgrade pip setuptools
 RUN pip3 install flake8
 RUN pip3 install autopep8
+RUN pip3 install pytest
+RUN pip3 install pyyaml
