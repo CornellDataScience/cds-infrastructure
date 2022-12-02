@@ -1,8 +1,3 @@
-## Users need to fill out these config variables
-config:
-  test_directory: /Users/jaymiee/Desktop/json/
-
-
 ## do not touch anything after this
 defaults:
   run:
