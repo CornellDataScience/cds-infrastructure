@@ -34,6 +34,7 @@ def file_to_string(filename):
 
 def main():
     prompted = input("Enter name of directory to search: ")
+    prompted = "../../" + prompted
     print(writeTests(prompted))
 
 if __name__ == "__main__":

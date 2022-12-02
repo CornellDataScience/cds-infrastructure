@@ -1,4 +1,10 @@
+python identifyTest.py
+file="pytests.txt"
 while read -r line; 
-do COMMAND; 
+do 
+  pytest "$line" >> pytest_out.txt; 
+done < "$file"
 
-done < input.file
+git add pytest_out.txt
+git commit -m "Output of run tests "
+git push
