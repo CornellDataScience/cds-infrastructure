@@ -7,8 +7,11 @@ import yaml
 def writeTests(dirname):
     testfiles = searchDir(dirname)
     file = open("pytests.txt","w")
-    for i in testfiles:
-        file.write(i +"\n")
+    for i in range(0, len(testfiles)):
+      if i < len(testfiles) - 1:
+        file.write(testfiles[i] +"\n")
+      else:
+        file.write(testfiles[i])
 
 def searchDir(dirname):
     test_files =[]
