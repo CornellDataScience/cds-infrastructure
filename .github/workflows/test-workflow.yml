@@ -21,4 +21,6 @@ jobs:
           echo $(ls)
           cd ./scripts/sample-script
           bash runTests.sh
+          cd ../../linter
+          bash lint.sh
         # bash run-tests.sh [pass in the test_directory argument]

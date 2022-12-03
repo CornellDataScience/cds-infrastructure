@@ -1,5 +1,3 @@
-import pytest
-
 NUMBER_1 = 3.0
 NUMBER_2 = 2.0
 
