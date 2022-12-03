@@ -20,6 +20,5 @@ jobs:
         run: |
           echo $(ls)
           cd ./scripts/sample-script
-          bash testScript.sh 
           bash runTests.sh
         # bash run-tests.sh [pass in the test_directory argument]
