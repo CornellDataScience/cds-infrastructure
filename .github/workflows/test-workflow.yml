@@ -18,7 +18,7 @@ jobs:
           fetch-depth: 0
           clean: false
           submodules: recursive
-        run: git checkout ${GITHUB_REF##*/}
+      - run: git checkout ${GITHUB_REF##*/}
       - name: branch name
         run: echo Branch Name ${GITHUB_REF##*/}
       - name: reset head
