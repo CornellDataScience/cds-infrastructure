@@ -6,6 +6,7 @@ fileout="pytest_out_$dt.txt"
 while read -r line; 
 do 
   pytest "$line" >> "$fileout";
+  echo "successfully pytested";
 done < "$file"
 
 rm "$file"
