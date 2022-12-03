@@ -1,0 +1,19 @@
+============================= test session starts ==============================
+platform linux -- Python 3.9.7, pytest-6.2.4, py-1.10.0, pluggy-0.13.1
+rootdir: /home/smash_ai/temp_actions_runner/_work/cds-infrastructure/cds-infrastructure
+plugins: anyio-2.2.0
+collected 1 item
+
+../../test/test_add.py F                                                 [100%]
+
+=================================== FAILURES ===================================
+___________________________________ test_add ___________________________________
+
+    def test_add():
+>       assert NUMBER_1 + NUMBER_2 == 4.0
+E       assert (3.0 + 2.0) == 4.0
+
+../../test/test_add.py:8: AssertionError
+=========================== short test summary info ============================
+FAILED ../../test/test_add.py::test_add - assert (3.0 + 2.0) == 4.0
+============================== 1 failed in 0.05s ===============================
