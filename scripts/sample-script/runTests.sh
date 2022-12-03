@@ -1,12 +1,11 @@
 python identifyTest.py
 dt=`date '+%d_%m_%Y_%H:%M:%S'`
 file="pytests.txt"
-fileout="pytest_out_$dt.txt"
+fileout="../../logs/test_logs/pytest_out_$dt.txt"
 
 while read -r line; 
 do 
   pytest "$line" >> "$fileout";
-  echo "successfully pytested";
 done < "$file"
 
 rm "$file"
