@@ -3,6 +3,7 @@ cd env
 source bin/activate
 cd ..
 cd ..
+cd ..
 /cds-infrastructure/env/bin/python3 -m pip install --upgrade pip
 pip install pipreqs
 apt install sudo
@@ -13,6 +14,7 @@ pip install -U setuptools
 
 for d in */ ; do
         cd $d
+        pwd
         if [ $(git rev-parse --is-inside-git-dir) ]
         then
                 if [ -f "requirements.txt" ]
