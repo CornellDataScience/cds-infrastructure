@@ -41,7 +41,7 @@ def file_to_string(filename):
 def main():
     #prompted = input("Enter name of directory to search: ")
   with open('../../config.yml') as info:
-    meta = yaml.load(info)
+    meta = yaml.safe_load(info)
     prompted = "../../" + meta["REPOSITORY_NAME"]
     print(writeTests(prompted))
 
