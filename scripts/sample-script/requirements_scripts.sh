@@ -2,6 +2,7 @@ python3 -m venv env
 cd env
 source bin/activate
 cd ..
+cd ..
 /cds-infrastructure/env/bin/python3 -m pip install --upgrade pip
 pip install pipreqs
 apt install sudo
@@ -17,7 +18,7 @@ for d in */ ; do
                 if [ -f "requirements.txt" ]
                 then
                         cat requirements.txt | sed -e '/^\s*#.*$/d' -e '/^\s*$/d' | xargs -n 1 python -m pip install
-                        echo "option 1."
+                        pip install torch
                 else
                         pipreqs .
                         cat requirements.txt | sed -e '/^\s*#.*$/d' -e '/^\s*$/d' | xargs -n 1 python -m pip install
