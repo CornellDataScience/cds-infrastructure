@@ -1,3 +1,0 @@
-[submodule "test/cds-infrastructure-test"]
-	path = test/cds-infrastructure-test
-	url = https://github.com/CornellDataScience/cds-infrastructure-test.git]
