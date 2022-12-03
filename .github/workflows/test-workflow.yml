@@ -14,7 +14,10 @@ jobs:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v3
-
+      - name: branch name
+        run: echo Branch Name ${GITHUB_REF##*/}
+      - name: reset head
+        run: git checkout ${GITHUB_REF##*/}
       - name: run test script
         #uses: ./scripts/sample-script
         run: |
@@ -22,7 +25,4 @@ jobs:
           cd ./scripts/sample-script
           bash runTests.sh
         # bash run-tests.sh [pass in the test_directory argument]
-      - name: branch name
-        run: echo Branch Name ${GITHUB_REF##*/}
-      - name: reset head
-        run: git checkout ${GITHUB_REF##*/}
+      
